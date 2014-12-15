@@ -1,0 +1,25 @@
+html,body,#map {
+	height: 100%;
+	overflow: hidden;
+}
+
+#stopListCtr {
+	background: white;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.fa-lg {
+	font-size: 1.3333333333333333em;
+	line-height: 1.75em !important;
+	vertical-align: -15%;
+}
+
+.green {
+	color: green !important;
+}
+
+.red {
+	color: red !important;
+}

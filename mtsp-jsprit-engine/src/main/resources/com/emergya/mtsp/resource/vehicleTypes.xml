@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicleTypes>
+	<vehicleType id="gridType">
+		<description>Heavy Vehicle 24t</description>
+		<allowableWeight weight="24" />
+		<engineInformation fuelType="diesel" gasConsumption="0.02" />  <!-- gasConsumption in liter per meter -->
+		<costInformation fix="130" perMeter="0.0008"
+			perSecond="0.008" />
+		<capacity>3</capacity>
+		<maxVelocity>10</maxVelocity>
+	</vehicleType>
+</vehicleTypes>

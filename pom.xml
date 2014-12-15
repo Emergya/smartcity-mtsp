@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.emergya.mtsp</groupId>
+    <artifactId>smartcity-mtsp</artifactId>
+    <version>0.1</version>
+    <packaging>pom</packaging>
+    
+    
+    <url>http://www.emergya.es</url>
+
+    <organization>
+        <name>Emergya</name>
+        <url>http://www.emergya.es</url>
+    </organization>
+
+    <modules>        
+        <module>mtsp-jsprit-engine</module>        
+        <module>mtsp-jsprit-webapp</module>
+    </modules>
+    
+    <properties>
+        <spring.version>4.0.6.RELEASE</spring.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    
+    <profiles>
+        <profile>
+            <id>devel</id>  
+            <properties>
+                <profile.properties>devel.properties</profile.properties>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>                          
+            <properties>
+                <profile.properties>prod.properties</profile.properties>
+            </properties>
+        </profile>
+    </profiles>
+</project>
